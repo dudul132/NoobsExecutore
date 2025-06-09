@@ -1,0 +1,9 @@
+local messages = {"game aneh", "game fomo", "game gak jelas", "game buat oranv kulit hitam"}
+local delay = 1
+
+while true do
+    for _, msg in ipairs(messages) do
+        game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+        task.wait(delay)
+    end
+end
